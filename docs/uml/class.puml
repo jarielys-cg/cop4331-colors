@@ -1,0 +1,24 @@
+@startuml
+class User {
+    userId : int
+    firstName : String
+    lastName : String
+}
+
+class RegisteredUser {
+    login(login, password) : User
+}
+
+class ColorOptions {
+    addColor(color, userId)
+    searchColor(search, userId)
+}
+
+class Color {
+    name : String
+}
+
+RegisteredUser --> User : returns
+User --> ColorOptions : uses
+ColorOptions --> Color : manages
+@enduml
