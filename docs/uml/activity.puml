@@ -1,0 +1,14 @@
+@startuml
+start
+:Log In;
+
+while (Choose option?) is (logged in)
+    if (Option?) then (search)
+        :Search Colors;
+    else (add)
+        :Add Colors;
+    endif
+endwhile (log out)
+
+stop
+@enduml
