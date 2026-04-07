@@ -1,0 +1,25 @@
+{
+  "name": "cop4331-colors",
+  "description": "The COLORS web application lets the user search for any available or newly added colors.",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jarielys-cg/cop4331-colors.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jarielys-cg/cop4331-colors.git"
+  },
+  "homepage": "https://github.com/jarielys-cg/cop4331-colors.git",
+  "devDependencies": {
+    "eslint": "^10.2.0",
+    "htmlhint": "^1.9.2",
+    "stylelint": "^17.6.0",
+    "stylelint-config-standard": "^40.0.0"
+  }
+}
