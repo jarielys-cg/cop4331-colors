@@ -1,0 +1,33 @@
+name: Lint Workflow
+
+on:
+  push:
+    branches: [ "*" ]
+  pull_request:
+    branches: [ "*" ]
+
+jobs:
+  run-linters:
+    name: Run linters
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install Node.js dependencies
+        run: npm ci
+
+      - name: Javascript Linter
+        run: npx eslint .
+
+      - name: HTML Linter
+        run: npx htmlhint '**/*.html'
+
+      - name: CSS Linter
+        run: npx stylelint '**/*.css'
